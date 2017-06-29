@@ -6,3 +6,7 @@ function assign<A extends Object, B, C, D, E>(a: A, b: B, c: C, d: D, e: E): A &
 function assign<A extends Object>(...a: A[]): A;
 
 export = assign;
+
+declare interface ObjectContructor {
+    assign(target: any, ...sources: any[]): any;
+}
